@@ -91,7 +91,7 @@ function App() {
           </thead>
           <tbody>
             {vuelta.map((datos) => (
-              <tr>
+              <tr key={datos.milesimas+datos.segundos}>
                 <td>{datos.horas}</td>
                 <td>{datos.minutos}</td>
                 <td>{datos.segundos}</td>
